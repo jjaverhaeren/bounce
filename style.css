@@ -1,0 +1,59 @@
+header {
+  text-align: right;
+}
+
+p {
+  font-family: "Roboto", sans-serif;
+  font-size: 0.8rem;
+  padding-right: 20px;
+  color: rgb(4, 28, 58);
+}
+
+#ref {
+  background-color: transparent;
+  left: 0;
+  width: 10px;
+  height: 10px;
+}
+
+.ball,
+.pos,
+#ref {
+  border-radius: 50%;
+  position: absolute;
+}
+
+#red {
+  width: 90px;
+  height: 90px;
+  left: 200px;
+  background-image: linear-gradient(180deg, rgb(233, 96, 96), rgb(182, 3, 3));
+  box-shadow: 20px 20px 10px 3px rgba(78, 78, 76, 0.6);
+  border-right: 1px solid red;
+  border-bottom: 1px solid rgb(160, 17, 17);
+}
+
+#blue {
+  width: 60px;
+  height: 60px;
+  left: 400px;
+  background-image: linear-gradient(180deg, rgb(89, 123, 196), rgb(0, 65, 206));
+  box-shadow: 20px 20px 10px 3px rgba(97, 97, 92, 0.6);
+  border-right: 1px solid rgb(0, 65, 206);
+  border-bottom: 1px solid rgb(45, 82, 156);
+  border-top: 1px solid rgb(65, 123, 238);
+}
+
+#yellow {
+  width: 120px;
+  height: 120px;
+  left: 700px;
+  background-image: linear-gradient(
+    180deg,
+    rgb(248, 204, 81),
+    rgb(255, 145, 0)
+  );
+  border-right: 1px solid orange;
+  border-bottom: 1px solid rgb(221, 169, 0);
+  box-shadow: 20px 10px 30px 3px rgba(92, 92, 91, 0.6);
+}
