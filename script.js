@@ -46,7 +46,7 @@ const bounce = (event, bounces = 9, maxHeight = 600, maxTime = 300) => {
 
   newBounces = bounces - 1;
   newMaxHeight = Math.round(0.7 * maxHeight);
-  newMaxTime = Math.round(maxTime);
+  newMaxTime = Math.round(0.9 * maxTime);
 
   setTimeout(() => {
     ball.style.transition = "all 300ms ease-in";
