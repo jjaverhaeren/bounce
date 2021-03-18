@@ -19,7 +19,7 @@ const checkHeight = (event) => {
 };
 
 const randomOffset = () => {
-  let randomNum = Math.floor(Math.random() * 60) + 20;
+  let randomNum = Math.floor(Math.random() * 40) + 20;
   return (randomNum *= Math.round(Math.random()) ? 1 : -1);
 };
 
