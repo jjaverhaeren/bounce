@@ -53,9 +53,9 @@ body {
   width: 60px;
   height: 60px;
   left: 50%;
-  background-image: linear-gradient(180deg, rgb(89, 123, 196), rgb(0, 65, 206));
+  background-image: linear-gradient(180deg, rgb(89, 123, 196), rgb(37, 71, 90));
   box-shadow: 20px 20px 10px 3px rgba(97, 97, 92, 0.6);
-  border-right: 1px solid rgb(0, 65, 206);
+  border-right: 1px solid rgb(43, 78, 99);
   border-bottom: 1px solid rgb(45, 82, 156);
   border-top: 1px solid rgb(65, 123, 238);
 }
