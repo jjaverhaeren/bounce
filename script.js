@@ -19,7 +19,7 @@ const checkHeight = (event) => {
 };
 
 const randomOffset = () => {
-  let randomNum = Math.floor(Math.random() * 40) + 20;
+  let randomNum = Math.floor(Math.random() * 60) + 20;
   return (randomNum *= Math.round(Math.random()) ? 1 : -1);
 };
 
@@ -46,7 +46,7 @@ const bounce = (event, bounces = 9, maxHeight = 600, maxTime = 300) => {
 
   newBounces = bounces - 1;
   newMaxHeight = Math.round(0.7 * maxHeight);
-//   newMaxTime = Math.round(0.9 * maxTime);
+  newMaxTime = Math.round(maxTime);
 
   setTimeout(() => {
     ball.style.transition = "all 300ms ease-in";
@@ -57,7 +57,7 @@ const bounce = (event, bounces = 9, maxHeight = 600, maxTime = 300) => {
     const rectBottom = checkHeight(event);
     if (rectBottom === viewPortBottom) {
       clearInterval(heightCheck);
-      bounce(event, newBounces, newMaxHeight, maxTime);
+      bounce(event, newBounces, newMaxHeight, newMaxTime);
     }
   }, 30);
 };
